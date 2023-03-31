@@ -1,67 +1,93 @@
-/*
-!(i) 
-Код попадает в итоговый файл, только когда вызвана функция, например FLSFunctions.spollers();
-Или когда импортирован весь файл, например import "files/script.js";
-Неиспользуемый (не вызванный) код в итоговый файл не попадает.
+import $, { event } from "jquery";
+import "slick-carousel";
 
-Если мы хотим добавить модуль следует его расскоментировать
-*/
-import {
-  isWebp,
-  headerFixed,
-  togglePopupWindows,
-  addTouchClass,
-  addLoadedClass,
-  menuInit,
-} from './modules'
-/* Раскомментировать для использования */
-// import { MousePRLX } from './libs/parallaxMouse'
+let header = document.querySelector(".header");
+let headerHeight = document.querySelector(".header").clientHeight;
 
-/* Раскомментировать для использования */
-// import AOS from 'aos'
+document.onscroll = function () {
+  let scroll = window.scrollY;
+  if (scroll > headerHeight) {
+    header.classList.add("fixed");
+    document.body.style.paddingTop = headerHeight + "px";
+  } else {
+    header.classList.remove("fixed");
+    document.body.removeAttribute("style");
+  }
+};
 
-/* Раскомментировать для использования */
-// import Swiper, { Navigation, Pagination } from 'swiper'
+let burger = document.querySelector(".menu__burger");
+let navMenu = document.querySelector(".menu__list");
+let body = document.body;
 
-// Включить/выключить FLS (Full Logging System) (в работе)
-window['FLS'] = true
+if (burger && navMenu) {
+  burger.addEventListener("click", () => {
+    burger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    body.classList.toggle("lock");
+  });
+  navMenu.querySelectorAll(".menu__link").forEach((link) => {
+    link.addEventListener("click", () => {
+      burger.classList.remove("active");
+      navMenu.classList.remove("active");
+      body.classList.remove("lock");
+    });
+  });
+}
 
-/* Проверка поддержки webp, добавление класса webp или no-webp для HTML
-! (i) необходимо для корректного отображения webp из css 
-*/
-isWebp()
-/* Добавление класса touch для HTML если браузер мобильный */
-/* Раскомментировать для использования */
-// addTouchClass();
-/* Добавление loaded для HTML после полной загрузки страницы */
-/* Раскомментировать для использования */
-// addLoadedClass();
-/* Модуль для работы с меню (Бургер) */
-/* Раскомментировать для использования */
-// menuInit()
+const anchors = document.querySelectorAll('a[href*="#"');
 
-/* Библиотека для анимаций ===============================================================================
- *  документация: https://michalsnik.github.io/aos
- */
-// AOS.init();
-// =======================================================================================================
+anchors.forEach((anchor) => {
+  anchor.addEventListener("click", (event) => {
+    event.preventDefault();
+    const blockID = anchor.getAttribute("href").substring(1);
 
-// Паралакс мышей ========================================================================================
-// const mousePrlx = new MousePRLX({})
-// =======================================================================================================
+    document.getElementById(blockID).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+    setTimeout(() => {
+      window.scrollBy(0, -90);
+    }, 1000);
+  });
+});
 
-// Фиксированный header ==================================================================================
-// headerFixed()
-// =======================================================================================================
+$(document).ready(function () {
+  $(".carousell-items").slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    lazyLoad: "ondemand",
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          centerMode: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          lazyLoad: "ondemand",
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          lazyLoad: "ondemand",
+        },
+      },
+    ],
+  });
+});
 
-/* Открытие/закрытие модальных окон ======================================================================
-* Чтобы модальное окно открывалось и закрывалось
-* На окно повешай атрибут data-type="<название окна>"
-* И на кнопку, которая вызывает окно так же повешай атрибут data-type="<название окна>"
-
-* На обертку(враппер) окна добавь класс _overlay-bg
-* На кнопку для закрытия окна добавь класс button-close
-*/
-/* Раскомментировать для использования */
-// togglePopupWindows()
-// =======================================================================================================
+let coll = document.getElementsByClassName("dropdown__button");
+for (let i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    let content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}

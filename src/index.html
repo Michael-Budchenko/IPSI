@@ -1,17 +1,620 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('html/head.html', {
-    'title': 'Главная'
-  })
+  @@include('html/head.html', { 'title': 'Главная' })
   <body>
     <div class="wrapper">
       @@include('html/header.html', {})
       <main class="page">
-        <div data-observ></div>
-        
+        <div class="container hero__info">
+          <div class="row">
+            <div class="col-lg-6 hero__mobile">
+              <h1 class="hero__info-title">Pay as You Go SIM Card</h1>
+              <h2 class="hero__info-subtitle">
+                Cheap calls, plenty of gigabytes, and no activation fees with
+                Pay as You Go SIM by IPSICell Wireless
+              </h2>
+              <button class="hero__info-btn"><a href="#"></a>Order SIM</button>
+            </div>
+            <div
+              class="col-lg-6 d-flex align-items-center justify-content-center"
+            >
+              <div class="hero__info-img">
+                <img
+                  class="hero__info-img--face"
+                  src="/images/hero__img.png"
+                  alt=""
+                />
+                <div class="hero__info-store">
+                  <div class="apple">
+                    <img src="/images/hero__apple.svg" alt="" />
+                  </div>
+                  <span class="after__element"></span>
+                  <div class="google">
+                    <img src="/images/hero__google.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container hero__info-list">
+          <div class="row">
+            <div class="col-sm-6">
+              <ul class="hero__list-items">
+                <li>Pay as you go with plans starting from $25/month</li>
+                <li>Unlimited data for $39/month</li>
+                <li>
+                  Convenient all-in-one app to manage your SIM card and plans
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6">
+              <ul class="hero__list-items-2">
+                <li>Easy top-up through IPSIPay or ApplePay</li>
+                <li>
+                  No hidden fees, no 3-month, 6-month, or 12-month pre-payments
+                  needed
+                </li>
+                <li>Free and quick registration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <section>
+          <div class="container text-center">
+            <div class="row zip__code align-items-center">
+              <div class="col text-center">
+                <h3 class="zip__code-title">Check the coverage</h3>
+                <p class="zip__code-subtitle">
+                  Enter a ZIP code to verify the coverage
+                </p>
+              </div>
+              <div class="col text-center">
+                <div class="zip__form">
+                  <input
+                    class="zip__input"
+                    type="text"
+                    placeholder="Zip Code"
+                  />
+                  <label for="name" class="zip__label"></label>
+                  <button class="zip__btn">Let’s go</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 d-flex justify-content-center">
+                <img src="/images/Consumer__Reports.svg" alt="#" />
+              </div>
+              <div class="col-md-3 d-flex justify-content-center">
+                <img src="/images/top10.svg" alt="#" />
+              </div>
+              <div class="col-md-3 d-flex justify-content-center">
+                <img src="/images/FDIO.svg" alt="#" />
+              </div>
+              <div class="col-md-3 d-flex justify-content-center">
+                <img src="/images/Wirecutter.svg" alt="#" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="Benefits">
+          <div class="container">
+            <h3 class="advantages__title text-center">
+              Why get pay as you go SIM from IPSICell Wireless
+            </h3>
+            <div class="row advantages row-cols-3">
+              <div class="col p-4 d-flex align-items-center flex-column">
+                <div class="advantages__icons">
+                  <img src="/images/Mobile__services.svg" alt="#" />
+                </div>
+                <h4 class="advantages__icons-title">Mobile services</h4>
+                <p class="advantages__icons-subtitle">
+                  Get a SIM card without any initial charges and pay only for
+                  mobile services
+                </p>
+              </div>
+              <div class="col p-4 d-flex align-items-center flex-column">
+                <div class="advantages__icons">
+                  <img src="/images/Affordable__cost.svg" alt="#" />
+                </div>
+                <h4 class="advantages__icons-title">Affordable cost</h4>
+                <p class="advantages__icons-subtitle">
+                  Tap into generous subscription plans with gigabytes of data at
+                  affordable cost
+                </p>
+              </div>
+              <div class="col p-4 d-flex align-items-center flex-column">
+                <div class="advantages__icons">
+                  <img src="/images/delivery.svg" alt="#" />
+                </div>
+                <h4 class="advantages__icons-title">Delivery</h4>
+                <p class="advantages__icons-subtitle">
+                  Have Pay as You Go SIM by IPSICell Wireless delivered by a
+                  courier
+                </p>
+              </div>
+              <div class="col p-4 d-flex align-items-center flex-column">
+                <div class="advantages__icons">
+                  <img src="/images/Ecosystem.svg" alt="#" />
+                </div>
+                <h4 class="advantages__icons-title">Ecosystem</h4>
+                <p class="advantages__icons-subtitle">
+                  Access the entire ecosystem of IPSI services for finance
+                  management
+                </p>
+              </div>
+              <div class="col p-4 d-flex align-items-center flex-column">
+                <div class="advantages__icons">
+                  <img src="/images/Bonuses.svg" alt="#" />
+                </div>
+                <h4 class="advantages__icons-title">Multiply bonuses</h4>
+                <p class="advantages__icons-subtitle">
+                  Multiply bonuses by using Pay as You Go SIM with other IPSI
+                  services
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container main__profile">
+            <div class="row">
+              <div class="col d-flex justify-content-center p-4">
+                <div class="main__profile-face">
+                  <img src="/images/Mario_Lopez.png" alt="#" />
+                  <div class="main__profile-followers">
+                    <span>2.1M</span>
+                    <p>Followers on instagram</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md p-4">
+                <h3 class="main__profile-title">
+                  Watch Mario Lopez explain IPSICell
+                </h3>
+                <p class="main__profile-subtitle">
+                  Check a short video on how Pay as You Go SIM by IPSICell
+                  Wireless works and what benefits you can get.
+                </p>
+                <button class="main__profile-btn">Watch video</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="Plans">
+          <div class="container">
+            <h3 class="main__plans-title text-center">Plans</h3>
+            <p class="main__plans-subtitle text-center">
+              Pick one of these plans and easily switch if your mobile service
+              needs grow
+            </p>
+            <div class="row">
+              <div class="plan__cards">
+                <div class="plan__card">
+                  <div class="plan__card-title">Starter</div>
+                  <div class="plan__card-price">
+                    <span>$25</span>
+                    <p>Per month</p>
+                  </div>
+                  <ul class="plan__card-list">
+                    <li><img src="/images/check.svg" alt="#" />5GB Data</li>
+                    <li>
+                      <img src="/images/check.svg" alt="#" />Unlimited Talk
+                    </li>
+                    <li>
+                      <img src="/images/check.svg" alt="#" />Unlimited Text
+                    </li>
+                  </ul>
+                  <button class="plan__card-btn">Get starter</button>
+                </div>
+                <div class="plan__card">
+                  <div class="plan__card-title">Basic</div>
+                  <div class="plan__card-price">
+                    <span>$34</span>
+                    <p>Per month</p>
+                  </div>
+                  <ul class="plan__card-list">
+                    <li><img src="/images/check.svg" alt="#" />10GB Data</li>
+                    <li>
+                      <img src="/images/check.svg" alt="#" />Unlimited Talk
+                    </li>
+                    <li>
+                      <img src="/images/check.svg" alt="#" />Unlimited Text
+                    </li>
+                  </ul>
+                  <button class="plan__card-btn">Get basic</button>
+                </div>
+                <div class="plan__card">
+                  <div class="plan__card-best">Best price</div>
+                  <div class="plan__card-title">Premium</div>
+                  <div class="plan__card-price">
+                    <span>$39</span>
+                    <p>Per month</p>
+                  </div>
+                  <ul class="plan__card-list">
+                    <li>
+                      <img src="/images/check.svg" alt="#" />Unlimited Data
+                    </li>
+                    <li>
+                      <img src="/images/check.svg" alt="#" />Unlimited Talk
+                    </li>
+                    <li>
+                      <img src="/images/check.svg" alt="#" />Unlimited Text
+                    </li>
+                  </ul>
+                  <button class="plan__card-btn">Get premium</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container">
+            <div class="row main__info justify-content-center">
+              <div class="col-3 d-flex align-items-center">
+                <div class="main__info-earn">Earn $10</div>
+              </div>
+              <div
+                class="col-7 d-flex align-items-center justify-content-center"
+              >
+                <h3 class="main__info-title">
+                  Grow your IPSI-apps family, double the benefits!
+                </h3>
+              </div>
+              <div class="row main__info-bottom justify-content-center">
+                <div class="col-5 text-start">
+                  <div class="main__info-subtitle">
+                    Earn $10 credit for IPSICell mobile plans for every
+                    international transaction with IPSIPay money transfer app.
+                  </div>
+                </div>
+                <div class="col-5">
+                  <div class="main__info-store">
+                    <button>
+                      <img src="/images/earn_apple.svg" alt="" />
+                    </button>
+                    <button>
+                      <img src="/images/earn_google.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container">
+            <div class="row main__integration">
+              <div class="col-5 main__integration-info p-4">
+                <h3>
+                  Integration with IPSIPay’s Simple, Safe, and Secure Money
+                  Transfer App
+                </h3>
+                <p>
+                  Pay as You Go SIM by IPSICell Wireless belongs to the IPSI
+                  ecosystem and integrates with its products.
+                </p>
+                <p>
+                  Register by connecting your IPSIPay wallet to easily top up
+                  your SIM card and complete other financial transactions within
+                  one platform.
+                </p>
+              </div>
+              <div class="col-6 d-flex justify-content-end p-4">
+                <div class="main__integration-face">
+                  <img src="/images/integration_img.png" alt="#" />
+                  <div class="main__integration-transfers">
+                    <span>200+</span>
+                    <p>Money transfers countries</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container">
+            <h3 class="main__order-title text-sm-center">
+              How to Order Your Pay as You Go SIM Card in 5 Simple Steps
+            </h3>
+            <div class="row main__order-body justify-content-center">
+              <div class="col-4 main__order d-flex">
+                <div class="main__order-circle">1</div>
+                <div class="main__order-info">
+                  <div class="main__order-text">Download</div>
+                  <div class="main__order-subtext">
+                    Download the IPSICell app to your Apple <br />
+                    or Android mobile device
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 d-flex">
+                <div class="main__order-circle">2</div>
+                <div class="main__order-info">
+                  <div class="main__order-text">Register</div>
+                  <div class="main__order-subtext">
+                    Click Order a SIM or Get SIM with IPSIPay’s digital wallet
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row main__order-body justify-content-center">
+              <div class="col-4 main__order d-flex">
+                <div class="main__order-circle">3</div>
+                <div class="main__order-info">
+                  <div class="main__order-text">Choose</div>
+                  <div class="main__order-subtext">
+                    Select a pay as you go mobile plan that works best for you
+                    out of three options
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 d-flex">
+                <div class="main__order-circle">4</div>
+                <div class="main__order-info">
+                  <div class="main__order-text">Order</div>
+                  <div class="main__order-subtext">
+                    Fill in your shipment details and order a SIM card to be
+                    delivered to you
+                  </div>
+                </div>
+              </div>
+              <div class="col-8 main__order d-flex">
+                <div class="main__order-circle">5</div>
+                <div class="main__order-info">
+                  <div class="main__order-text">Activate</div>
+                  <div class="main__order-subtext">
+                    Activate your pay as you go SIM when you receive it
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="Download">
+          <div class="container text-center">
+            <div class="row download align-items-center p-4">
+              <div class="col text-center">
+                <h3 class="download-title">Download App IPSICell</h3>
+                <p class="download-subtitle">
+                  Get a card to call and browse the web with minimum fees
+                </p>
+              </div>
+              <div class="col text-center">
+                <div class="download__info-store">
+                  <button>
+                    <img src="/images/earn_apple.svg" alt="" />
+                  </button>
+                  <button>
+                    <img src="/images/earn_google.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="Reviews">
+          <div class="container">
+            <h3 class="carousell__title text-center">
+              What people say about us
+            </h3>
+            <p class="carousell__subtitle text-center">
+              Here's what people have told us about their experience.
+            </p>
+            <div class="row">
+              <div class="carousell-items">
+                <div class="carousell__item">
+                  <div class="carousel__item-circle">5.0</div>
+                  <div class="carousell__item-stars">
+                    <img src="/images/carousel_star.svg" alt="#" />
+                    <img src="/images/carousel_star.svg" alt="#" />
+                    <img src="/images/carousel_star.svg" alt="#" />
+                    <img src="/images/carousel_star.svg" alt="#" />
+                    <img src="/images/carousel_star.svg" alt="#" />
+                  </div>
+                  <div class="carousell__item-title">Aran Douglas</div>
+                  <div class="carousel__item-subtitle">
+                    “ I just appreciate the genuine and well-grounded attitude
+                    Mr. Reynolds takes in offering this service at such a
+                    remarkably low cost. “
+                  </div>
+                </div>
+                <div class="carousell__item">
+                  <div class="carousel__item-circle">4.0</div>
+                  <div class="carousell__item-stars">
+                    <img src="/images/carousel_star.svg" alt="#" />
+                    <img src="/images/carousel_star.svg" alt="#" />
+                    <img src="/images/carousel_star.svg" alt="#" />
+                    <img src="/images/carousel_star.svg" alt="#" />
+                    <img src="/images/carousel_star.svg" alt="#" />
+                  </div>
+                  <div class="carousell__item-title">Aran Douglas</div>
+                  <div class="carousel__item-subtitle">
+                    “ I just appreciate the genuine and well-grounded attitude
+                    Mr. Reynolds takes in offering this service at such a
+                    remarkably low cost. “
+                  </div>
+                </div>
+                <div class="carousell__item">
+                  <div class="carousel__item-circle">5.0</div>
+                  <div class="carousell__item-stars">
+                    <img src="/images/carousel_star.svg" alt="#" />
+                    <img src="/images/carousel_star.svg" alt="#" />
+                    <img src="/images/carousel_star.svg" alt="#" />
+                    <img src="/images/carousel_star.svg" alt="#" />
+                    <img src="/images/carousel_star.svg" alt="#" />
+                  </div>
+                  <div class="carousell__item-title">Aran Douglas</div>
+                  <div class="carousel__item-subtitle">
+                    “ I just appreciate the genuine and well-grounded attitude
+                    Mr. Reynolds takes in offering this service at such a
+                    remarkably low cost. “
+                  </div>
+                </div>
+                <div class="carousell__item">
+                  <div class="carousel__item-circle">5.0</div>
+                  <div class="carousell__item-stars">
+                    <img src="/images/carousel_star.svg" alt="#" />
+                    <img src="/images/carousel_star.svg" alt="#" />
+                    <img src="/images/carousel_star.svg" alt="#" />
+                    <img src="/images/carousel_star.svg" alt="#" />
+                    <img src="/images/carousel_star.svg" alt="#" />
+                  </div>
+                  <div class="carousell__item-title">Aran Douglas</div>
+                  <div class="carousel__item-subtitle">
+                    “ I just appreciate the genuine and well-grounded attitude
+                    Mr. Reynolds takes in offering this service at such a
+                    remarkably low cost. “
+                  </div>
+                </div>
+                <div class="carousell__item">
+                  <div class="carousel__item-circle">4.0</div>
+                  <div class="carousell__item-stars">
+                    <img src="/images/carousel_star.svg" alt="#" />
+                    <img src="/images/carousel_star.svg" alt="#" />
+                    <img src="/images/carousel_star.svg" alt="#" />
+                    <img src="/images/carousel_star.svg" alt="#" />
+                    <img src="/images/carousel_star.svg" alt="#" />
+                  </div>
+                  <div class="carousell__item-title">Aran Douglas</div>
+                  <div class="carousel__item-subtitle">
+                    “ I just appreciate the genuine and well-grounded attitude
+                    Mr. Reynolds takes in offering this service at such a
+                    remarkably low cost. “
+                  </div>
+                </div>
+                <div class="carousell__item">
+                  <div class="carousel__item-circle">5.0</div>
+                  <div class="carousell__item-stars">
+                    <img src="/images/carousel_star.svg" alt="#" />
+                    <img src="/images/carousel_star.svg" alt="#" />
+                    <img src="/images/carousel_star.svg" alt="#" />
+                    <img src="/images/carousel_star.svg" alt="#" />
+                    <img src="/images/carousel_star.svg" alt="#" />
+                  </div>
+                  <div class="carousell__item-title">Aran Douglas</div>
+                  <div class="carousel__item-subtitle">
+                    “ I just appreciate the genuine and well-grounded attitude
+                    Mr. Reynolds takes in offering this service at such a
+                    remarkably low cost. “
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container">
+            <div class="row justify-content-center">
+              <h3 class="faqs__title text-center">FAQs</h3>
+              <div class="col-lg-8 text-center">
+                <h4 class="faqs__info"></h4>
+                <button class="dropdown__button">
+                  What’s Pay as You Go SIM and how is it different from other
+                  SIM cards or mobile plans?
+                </button>
+                <div class="dropdown__list">
+                  <p class="dropdown__list-item text-start">
+                    IPSICell’s Pay as You Go SIM doesn’t require you to sign up
+                    for 3, 6, or 12 months or pre-pay for months ahead. You will
+                    know exactly how much a single month costs with us, and you
+                    pay as you go, no hidden fees or special requirements. Want
+                    to go cheaper? Connect your IPSIPay account and start
+                    earning credits towards your IPSICell mobile plan.
+                  </p>
+                </div>
+                <button class="dropdown__button">
+                  Can I get a Pay as You Go SIM card without an IPSIPay wallet?
+                </button>
+                <div class="dropdown__list">
+                  <p class="dropdown__list-item text-start">
+                    Yes, you can order a Pay as You Go SIM card by IPSICell
+                    without getting an IPSIPay wallet. Still, we recommend
+                    opening an IPSIPay account to enjoy more convenient SIM card
+                    management, add-ons, and bonuses.
+                  </p>
+                </div>
+                <button class="dropdown__button">
+                  What information do I need to provide to order Pay as You Go
+                  SIM by IPSICell Wireless?
+                </button>
+                <div class="dropdown__list">
+                  <p class="dropdown__list-item text-start">
+                    If you connect your IPSICell account to an IPSIPay wallet,
+                    the app will automatically pre-fill the necessary data in
+                    the form. If you order a SIM card without integrating with
+                    IPSIPay, you will need to enter your First & Last name,
+                    email address, phone number, shipping, and payment
+                    information.
+                  </p>
+                </div>
+                <button class="dropdown__button">
+                  How long does it take to receive a card?
+                </button>
+                <div class="dropdown__list">
+                  <p class="dropdown__list-item text-start">
+                    It takes up to 5 days to deliver your card to the shipping
+                    address once you confirm the order.
+                  </p>
+                </div>
+                <button class="dropdown__button">
+                  Is Pay as You Go SIM by IPSICell Wireless supported on all
+                  mobile devices?
+                </button>
+                <div class="dropdown__list">
+                  <p class="dropdown__list-item text-start">
+                    IPSICell SIM cards work with core iOS and Android devices.
+                  </p>
+                </div>
+                <button class="dropdown__button">
+                  Why use Pay as You Go SIM | IPSICell Wireless with other IPSI
+                  products?
+                </button>
+                <div class="dropdown__list">
+                  <p class="dropdown__list-item text-start">
+                    IPSI services are interconnected and offer maximum benefits
+                    when combined. Integrating IPSICell SIM with the IPSIPay
+                    wallet, you get IPSICell bonuses for every transaction.
+                    Recharging your mobile balance also becomes much easier.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container text-center">
+            <div class="row contacts align-items-center p-4">
+              <div class="col-3 text-center d-flex justify-content-end">
+                <div class="logo__contacts">
+                  <a href="#"> <img src="/images/logo.svg" alt="" /> </a>
+                </div>
+              </div>
+              <div class="col-4 d-flex justify-content-center text-start">
+                <p class="contacts__info">
+                  56B 5th Ave. Lot 1 #AT, Carmel by the Sea, Ca. 93921
+                </p>
+              </div>
+              <div class="col-5 text-center">
+                <div class="download__info-store">
+                  <button>
+                    <img src="/images/earn_apple.svg" alt="" />
+                  </button>
+                  <button>
+                    <img src="/images/earn_google.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       @@include('html/footer.html', {})
     </div>
     @@include('html/script.html', {})
   </body>
-</html> 
+</html>
