@@ -4,37 +4,27 @@ body {
     touch-action: none;
   }
 }
-// Базовые анимации:
-// @import "keyframes";
-
-// Стили для полноэкранного блока:
-// @import "fullscreen";
-
-// Стили основного ограничивающего контейнера ========================================================================
-/*
-* (i) Стили будут применяться ко 
-* всем классам содержащим *__container
-* Например header__container, main__container и т.д.
-*/
-
-// Стили отзывчивых картинок (IBG) ===================================================================================
+[class*="__container"] {
+  max-width: rem($containerWidth + $mainOffset * 2);
+  margin: 0 auto;
+  padding: 0 rem($mainOffset);
+}
 [class*="-ibg"] {
-	position: relative;
-	img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		object-fit: cover;
-	}
+  position: relative;
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
 }
 [class*="-ibg_contain"] {
-	img {
-		object-fit: contain;
-	}
+  img {
+    object-fit: contain;
+  }
 }
-// Стили для обертки модальных окон ==================================================================================
 [class*="_overlay-bg"] {
   position: fixed;
   top: 0;
@@ -48,7 +38,8 @@ body {
   padding: rem(60) rem(15); // Изменить по макету
   overflow-y: auto;
   @include media(768) {
-    &::-webkit-scrollbar { // Удалить из за ненадобности
+    &::-webkit-scrollbar {
+      // Удалить из за ненадобности
       display: none;
     }
   }
@@ -57,7 +48,7 @@ body {
     visibility: visible;
   }
 }
-// Оболочка ===========================================================================================================
+// Оболочка ===================================================================
 .wrapper {
   display: flex;
   flex-direction: column;

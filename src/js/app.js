@@ -19,20 +19,8 @@ let burger = document.querySelector(".menu__burger");
 let navMenu = document.querySelector(".menu__list");
 let body = document.body;
 
-if (burger && navMenu) {
-  burger.addEventListener("click", () => {
-    burger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-    body.classList.toggle("lock");
-  });
-  navMenu.querySelectorAll(".menu__link").forEach((link) => {
-    link.addEventListener("click", () => {
-      burger.classList.remove("active");
-      navMenu.classList.remove("active");
-      body.classList.remove("lock");
-    });
-  });
-}
+// Включить/выключить FLS (Full Logging System) (в работе)
+window['FLS'] = true
 
 const anchors = document.querySelectorAll('a[href*="#"');
 
@@ -79,15 +67,14 @@ $(document).ready(function () {
   });
 });
 
-let coll = document.getElementsByClassName("dropdown__button");
-for (let i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    let content = this.nextElementSibling;
-    if (content.style.maxHeight) {
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
+/* Открытие/закрытие модальных окон ======================================================================
+* Чтобы модальное окно открывалось и закрывалось
+* На окно повешай атрибут data-type="<название окна>"
+* И на кнопку, которая вызывает окно так же повешай атрибут data-type="<название окна>"
+
+* На обертку(враппер) окна добавь класс _overlay-bg
+* На кнопку для закрытия окна добавь класс button-close
+*/
+/* Раскомментировать для использования */
+// togglePopupWindows()
+// =======================================================================================================
