@@ -1,0 +1,587 @@
+@media (max-width: 1440px) {
+  .hero__images-3 {
+    grid-row: 2;
+    grid-column: 2 / span 2;
+    width: 130%;
+  }
+}
+
+@media (max-width: 1366px) {
+  .hero__images-3 {
+    grid-column: 1 / span 2;
+    width: 100%;
+  }
+  .hero__images {
+    grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
+  }
+  .posts img {
+    max-width: 100%;
+  }
+  .posts__images {
+    flex-wrap: wrap;
+  }
+  .posts__right-images1 {
+    grid-column: 1/3;
+  }
+  .posts__right-images {
+    grid-template-columns: none;
+  }
+}
+
+@media (max-width: 1280px) {
+  .email__global-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .email__right-images img {
+    max-width: none;
+  }
+
+  .email__wrapper {
+    align-items: center;
+  }
+
+  .email__right-img1 {
+    left: 0;
+    bottom: 0;
+  }
+  .email__left-input input {
+    width: 100%;
+  }
+  .email__left-input-text {
+    max-width: 100%;
+  }
+  .email__left-input-btn {
+    left: 25rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about__card-elipse {
+    display: none;
+  }
+  .about__card-elipse-2 {
+    display: none;
+  }
+  .clients {
+    padding-top: 10rem;
+  }
+  .clients__wrapper {
+    flex-direction: column;
+  }
+  .clients__title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .clients__subtitle {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 8rem 0;
+  }
+  .hero__images {
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  }
+
+  .info {
+    flex-direction: column-reverse;
+  }
+  .info__left-images__left-side__small-img {
+    display: none;
+  }
+  .info__right {
+    text-align: center;
+  }
+  .info__right-title {
+    flex-direction: column;
+  }
+
+  .info__right-title::before {
+    margin-right: 0;
+  }
+  .info__right-subtitle {
+    text-align: center;
+  }
+
+  .our__mission-text {
+    flex-direction: column;
+    align-items: center;
+    h6 {
+      margin-top: 0.625rem;
+    }
+  }
+  .news__cards {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .news__card img {
+    width: 100%;
+  }
+  .news__card-img1 img {
+    height: 100%;
+  }
+  .card__2,
+  .card__1 {
+    display: none;
+  }
+  .news__btn {
+    color: rgba(1, 163, 164, 1);
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+  }
+
+  .news__btn::after {
+    content: '';
+    position: absolute;
+    right: -12px;
+    display: block;
+    width: 0.125rem;
+    height: 0.5rem;
+    background: rgba(255, 255, 255, 1);
+  }
+
+  .news__btn::before {
+    content: '';
+    position: absolute;
+    transform: rotate(90deg);
+    right: -12px;
+    display: block;
+    width: 0.125rem;
+    height: 0.5rem;
+    background: rgba(255, 255, 255, 1);
+  }
+
+  .news__btn-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .news__btn-circle {
+    display: block;
+  }
+
+  .email__left-input {
+    flex-direction: column;
+  }
+
+  .email__left-input-btn {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin-top: 1.25rem;
+  }
+
+  .email__left-input input {
+    border-radius: 0;
+  }
+
+  .email__input {
+    padding: 5px;
+    border: 1px solid transparent;
+    background-image: linear-gradient(
+      141.39deg,
+      #74e6cf 13.88%,
+      #c0e594 106.32%
+    );
+    background-clip: padding-box;
+    transition: border-color 0.3s ease;
+  }
+
+  .footer__container {
+    position: relative;
+    flex-direction: column;
+  }
+  .footer__center {
+    margin: 0 auto;
+    position: absolute;
+    top: 7rem;
+  }
+}
+
+@media (max-width: 666px) {
+  .hero {
+    padding: 5rem 0;
+  }
+
+  .hero__info-title {
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .hero__info-subtitle {
+    font-size: 1.625rem;
+    line-height: 2.5rem;
+    span {
+      display: inline-block;
+      left: 0;
+    }
+  }
+
+  .hero__images {
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    gap: 5px;
+    padding: 0;
+  }
+
+  .hero__images-3 {
+    grid-column: 1 / span 4;
+    grid-row: 3;
+  }
+  .hero__images img {
+    width: 100%;
+  }
+
+  .hero__elipse-img-1 {
+    top: 1rem;
+    transform: rotate(35deg);
+  }
+  .hero__elipse-img-2 {
+    right: -5rem;
+    top: -1rem;
+    transform: translateX(-45px);
+  }
+
+  .hero__elipse-img-4 {
+    transform: translateX(-55px);
+    top: -2.5rem;
+    right: -9rem;
+  }
+  .hero__elipse-img-5 {
+    right: -2rem;
+    transform: translateX(-20px);
+    bottom: 0.5rem;
+  }
+  .about {
+    padding-top: 3.125rem;
+  }
+  .about__cards {
+    flex-wrap: wrap;
+  }
+  .about__card-vector {
+    display: flex;
+  }
+  .about__card {
+    padding: 0.5rem;
+  }
+  .hero__btn {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .about__title {
+    font-family: AdventPro;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+  .about__card-title {
+    font-family: AdventPro;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+  }
+  .about__card-subtitle {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
+  .about__btn {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .info {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .info__right-title {
+    font-family: AdventPro;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+  .info__right-subtitle {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+  .info__right-button {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .our__mission-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    img {
+      position: static;
+    }
+  }
+  .our__mission-text {
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+  }
+  .our__mission-subtitle {
+    font-size: 1.625rem;
+    line-height: 2.625rem;
+  }
+  .our__mission-line {
+    display: none;
+  }
+  .posts__right-images {
+    display: none;
+  }
+  .posts__left-img1-elips {
+    display: none;
+  }
+  .our__mission {
+    padding-bottom: 9rem;
+  }
+  .posts {
+    padding-bottom: 3.125rem;
+  }
+  .posts__title {
+    font-family: AdventPro;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+  .news__title {
+    font-family: AdventPro;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+  .news__card-title {
+    font-family: AdventPro;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+  .news__card-subtitle {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
+
+  .email__left-input-img {
+    display: none;
+  }
+
+  .email__right-img3 {
+    transform: rotate(160deg);
+    left: 33.5rem;
+  }
+  .email__right-img6 {
+    transform: rotate(-55deg);
+
+    bottom: 22.5rem;
+    left: 24rem;
+  }
+  .email__title::before {
+    display: none;
+  }
+  .email__title {
+    text-align: center;
+    font-family: AdventPro;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+  .email__subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    letter-spacing: 0.1rem;
+    h6 {
+      margin-left: 0;
+    }
+  }
+  .email__subtitle::before {
+    content: url('../images/Vector 4.png');
+
+    top: -0.625rem;
+    position: relative;
+  }
+  .email__left-title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    letter-spacing: 0.05em;
+  }
+
+  .email__left-input-btn {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .email__right-img1 {
+    img {
+      width: 18.5rem;
+    }
+
+    left: -3rem;
+  }
+
+  .email__right-img2 {
+    img {
+      width: 12rem;
+    }
+    transform: rotate(22deg);
+    bottom: 8.5rem;
+    left: 14rem;
+  }
+  .email__right-img6 {
+    img {
+      width: 7rem;
+    }
+    bottom: 9rem;
+    left: 9.5rem;
+  }
+  .email__right-img3 {
+    img {
+      width: 2rem;
+    }
+    transform: rotate(180deg);
+    bottom: 10.5rem;
+    left: 14rem;
+  }
+  .email__right-img5 {
+    img {
+      width: 4rem;
+    }
+    transform: rotate(180deg);
+    bottom: 7.5rem;
+    left: 17rem;
+  }
+  .email__right-img7 {
+    img {
+      width: 4rem;
+    }
+    transform: rotate(342deg);
+    bottom: 5.5rem;
+    left: 16.5rem;
+  }
+  .email__right-img4 {
+    img {
+      width: 7rem;
+    }
+    transform: rotate(22deg);
+    bottom: 6rem;
+    left: 17rem;
+  }
+  .email {
+    padding-top: 5rem;
+  }
+  .modal__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .modal__text {
+    h4 {
+      font-family: AdventPro;
+      font-weight: 700;
+    }
+    h5 {
+      font-family: AdventPro;
+      font-weight: 700;
+      padding: 0 1.25rem;
+    }
+  }
+  .modal__btn {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+  }
+  .fancybox-content {
+    padding: 0;
+  }
+
+  .clients {
+    padding-top: 3rem;
+  }
+  .clients__img {
+    display: none;
+  }
+  .clients__title {
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.875rem;
+  }
+  .clients__subtitle {
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    letter-spacing: 0.1rem;
+  }
+  .clients__feedback-name {
+    font-family: Advent Pro;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.375rem;
+    letter-spacing: 0.05rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    margin-bottom: 1.25rem;
+  }
+  .clients__feedback-stars {
+    margin: 0;
+  }
+  .clients__feedback-name-img {
+    display: block;
+    img {
+      border-radius: 50%;
+    }
+  }
+  .clients__feedback-text::before {
+    margin: 1rem auto;
+  }
+  .slider .slick-arrow.slick-next {
+    top: 24rem;
+    left: 8rem;
+  }
+  .slider .slick-arrow.slick-prev {
+    top: 24rem;
+    left: 6rem;
+  }
+  .clients__feedback-text span {
+    padding-right: 0.5rem;
+  }
+  .clients__feedback-text {
+    width: 18rem;
+  }
+  .footer__left {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+  .footer__right {
+    flex-direction: column;
+    font-size: 1rem;
+  }
+  .clients__bottom-elips1,
+  .clients__bottom-elips2 {
+    display: none;
+  }
+  .footer .footer__container-copyrights {
+    font-size: 0.6875rem;
+	padding-top: 2.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+}
