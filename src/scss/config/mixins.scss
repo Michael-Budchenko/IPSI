@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 // !Адаптивное свойство (clamp)
+=======
+>>>>>>> 3124e9d88a55d86a2d377cd4a4d7019e652a50ef
 @mixin adaptiveClamp(
   $property,
   $startSize,
@@ -28,6 +31,7 @@
   // Источник: https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
   $slope: math.div(($startSize - $minSize), ($widthFrom - $widthTo));
   $yIntersection: -$widthTo * $slope + $minSize;
+<<<<<<< HEAD
   $flyValue: #{rem($yIntersection)}' + ' #{$slope * 100}vw;
 
   // Получение значения свойства
@@ -41,6 +45,21 @@
       ','
       rem($minSize)
       ')'};
+=======
+  $flyValue: #{rem($yIntersection)}" + " #{$slope * 100}vw;
+
+  // Получение значения свойства
+  $propertyValue: #{"clamp(" rem($minSize) "," $flyValue "," rem($startSize) ")"};
+  // Если отрицательные значения
+  @if ($minSize > $startSize) {
+    $propertyValue: #{"clamp("
+      rem($startSize)
+      ","
+      $flyValue
+      ","
+      rem($minSize)
+      ")"};
+>>>>>>> 3124e9d88a55d86a2d377cd4a4d7019e652a50ef
   }
 
   @if $widthFrom ==
@@ -203,7 +222,7 @@
 // !after-before
 @mixin pseudocell($type, $pos: absolute) {
   &::#{$type} {
-    content: '';
+    content: "";
     position: $pos;
     @content;
   }

@@ -78,9 +78,17 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@fancyapps/ui": "^5.0.20",
     "aos": "^2.3.4",
     "jquery": "^3.7.0",
+=======
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.0-alpha1",
+    "jquery": "^3.6.3",
+    "slick-carousel": "^1.8.1",
+>>>>>>> 3124e9d88a55d86a2d377cd4a4d7019e652a50ef
     "swiper": "^8.4.5"
   }
 }

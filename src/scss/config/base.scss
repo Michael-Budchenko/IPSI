@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /** Базовые анимации: */
 @import 'keyframes';
 
@@ -10,15 +11,29 @@
 * Например header__container, main__container и т.д.
 */
 [class*='__container'] {
+=======
+body {
+  &.lock {
+    overflow: hidden;
+    touch-action: none;
+  }
+}
+[class*="__container"] {
+>>>>>>> 3124e9d88a55d86a2d377cd4a4d7019e652a50ef
   max-width: rem($containerWidth + $mainOffset * 2);
   margin: 0 auto;
   padding: 0 rem($mainOffset);
 }
+<<<<<<< HEAD
 
 // Стили отзывчивых картинок (IBG) ============================================
 [class*='-ibg'] {
   position: relative;
 
+=======
+[class*="-ibg"] {
+  position: relative;
+>>>>>>> 3124e9d88a55d86a2d377cd4a4d7019e652a50ef
   img {
     position: absolute;
     width: 100%;
@@ -32,6 +47,32 @@
 [class*='-ibg_contain'] {
   img {
     object-fit: contain;
+<<<<<<< HEAD
+=======
+  }
+}
+[class*="_overlay-bg"] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: $standartTrans; // Можно задать свою анимацию
+  z-index: 2000; // Увеличить если нужно
+  padding: rem(60) rem(15); // Изменить по макету
+  overflow-y: auto;
+  @include media(768) {
+    &::-webkit-scrollbar {
+      // Удалить из за ненадобности
+      display: none;
+    }
+  }
+  &._is-open {
+    opacity: 1;
+    visibility: visible;
+>>>>>>> 3124e9d88a55d86a2d377cd4a4d7019e652a50ef
   }
 }
 
